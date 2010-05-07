@@ -8,7 +8,7 @@ Usage
 
 ::
 
-fb_remote touche[+] [nombre_de_repetition]
+  fb_remote touche[+] [nombre_de_repetition]
 
 
 Noms des touches
