@@ -6,7 +6,7 @@ fb_remote est un outil en ligne de commande pour simuler la télécommande de la
 Usage
 ------
 
-Après avoir initialisé CODE avec le code de la commande indiqué dans l'écran d'information de la Freebox::
+Après avoir initialisé FREEBOX_TELECOMMAND_CODE avec le code de la commande indiqué dans l'écran d'information de la Freebox::
 
   fb_remote touche[+] [nombre_de_repetition]
 
