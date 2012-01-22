@@ -17,8 +17,9 @@
 usage() {
   cat <<END
 Usage: $0 touche[+] [nombre_de_repetition]
-
 '+' dénote un appui long.
+
+fb_remote est un outil en ligne de commande pour simuler la télécommande de la Freebox.
 
 Noms des touches :
 red
