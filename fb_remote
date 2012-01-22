@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CODE="__CODE_TELECOMMANDE__"
+FREEBOX_TELECOMMAND_CODE="__CODE_TELECOMMANDE__"
 
 usage() {
   cat <<END
@@ -45,4 +45,4 @@ if [ "$key+" = "$1" ]; then
 fi
 repeat=${2:-1}
 
-curl "http://hd1.freebox.fr/pub/remote_control?key=$key&code=$CODE$long&repeat=$repeat"
+curl "http://hd1.freebox.fr/pub/remote_control?key=$key&code=$FREEBOX_TELECOMMAND_CODE$long&repeat=$repeat"
