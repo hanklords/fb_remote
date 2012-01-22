@@ -1,7 +1,5 @@
 #!/bin/sh
 
-FREEBOX_TELECOMMAND_CODE="__CODE_TELECOMMANDE__"
-
 usage() {
   cat <<END
 Usage: $0 touche[+] [nombre_de_repetition]
@@ -37,7 +35,16 @@ END
   exit 1
 }
 
+missing_code() {
+  cat <<END
+Vous devez initialiser le code de la freebox dans la variable
+d'environnement FREEBOX_TELECOMMAND_CODE
+END
+  exit 1
+}
+
 [ $# -lt 1 ] && usage
+[ -z "$FREEBOX_TELECOMMAND_CODE" ] && missing_code
 
 key="${1%+}"
 if [ "$key+" = "$1" ]; then
